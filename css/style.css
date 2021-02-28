@@ -1,14 +1,67 @@
-body {
-  background-color: thistle;
+
+/* HOME PAGE HEADER: Styling the header bar with button, search, and menu */
+header {
+
 }
 
-header {
+.header-button {
+  font-family: inherit ;
   
+
+}
+
+.header-search {
+
+}
+
+.header-nav {
+
+}
+
+/* GENERAL STYLING: Styling for entire website */
+
+button {
+  font-family: 'Montserrat' ;
+  color: black;
+  background-color: thistle;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 8px;
+  border: 1px solid black;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: black;
+  color: thistle;
+}
+
+
+nav {
+
+}
+
+body {
+  background-color: thistle;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
-  font-family: sans-serif;
+  font-family: 'Monoton';
+  font-weight: 100;
+  font-size: 100px;
 }
+
+.main-title {
+  font-weight: inherit;
+  font-size: 100px;
+}
+
+
+
 
 /* Make the site responsive*/
 * {
