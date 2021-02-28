@@ -1,78 +1,93 @@
 
-/* HOME PAGE HEADER: Styling the header bar with button, search, and menu */
-/* Get the menu hamburger image to sit on the right of page and share the same line as button*/
-.header-menu {
-  float: right;
-  margin-right: 15px;
-  display: inline-block;
-}
-/*Styling for the Subscribe button on home page*/
-.header-button {
-  font-family: inherit ;
-  display: inline;
-}
-/* Navigation menu */
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 40%x;
-  background-color: black;
-  color: thistle;
-  border: solid black 1px;
-  border-radius: 8px;
-  text-align: center;
-  display: inline-block;
-  
-}
-/*Link styling*/
-li a {
-  display: block;
-  background-color: black;
-  color: thistle;
-  padding: 8px 70px;
-  text-decoration: none;
-  border-radius: 8px;
-  
-}
+/*PAGE: CURRENT ISSUE*/
+  /*CURRENT ISSUE HEADER: Styling the header bar with button, search, and menu */
+      /*Sticky header menu*/
+      .header {
+        padding: 10px 16px;
+        background:thistle;
+      }
+      
+      .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+      
+      .sticky + .content {
+        padding-top: 102px;
+      }
+      
+      /*Styling for the Subscribe button on home page*/
+      .header-button {
+        font-family: inherit ;
+        display: inline;
+      }
+      /* Get the menu hamburger image to sit on the right of page and share the same line as button*/
+      .header-menu {
+        float: right;
+        margin-right: 15px;
+        display: inline-block;
+      }
 
-/* Change link colour on hover */
-li a:hover {
-  background-color:thistle;
-  color: black;
-  border-style: solid;
-  border-color: black;
-  border-width: 1px;
-  
-}
+      /* Set the navigation menu look */
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 40%x;
+        background-color: black;
+        color: thistle;
+        border: solid black 1px;
+        border-radius: 8px;
+        text-align: center;
+        display: inline-block;
+      }
+      /*Set the style for link in the navigation menu*/
+      li a {
+        display: block;
+        background-color: black;
+        color: thistle;
+        padding: 8px 70px;
+        text-decoration: none;
+        border-radius: 8px;
+      }
 
-/*Show active link*/
-.active {
-  background-color: rgba(100, 0, 139, 0.479);
-  color: thistle;
+      /* Change link colour when user hovers over it */
+      li a:hover {
+        background-color:thistle;
+        color: black;
+        border-style: solid;
+        border-color: black;
+        border-width: 1px;
+      }
+
+      /*Highlight the active link*/
+      .active {
+        background-color: rgba(100, 0, 139, 0.479);
+        color: thistle;   
+      }
+
+      /*Display the menu/navigation when user hovers over hamburger icon*/
+      .dropdown {
+        display: inline-block;
+        float: right;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        min-width: 200px;
+        right: 0;
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+  /*CURRENT ISSUE TITLE*/
+  .main-title {
+    font-weight: inherit;
+    font-size: 100px;
     
-}
-
-/*Dropdown navigation bar*/
-.dropdown {
-  display: inline-block;
-  float: right;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  min-width: 200px;
-  right: 0;
-  
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-nav {
-
-}
+  }
 
 /* GENERAL STYLING: Styling for entire website */
 
@@ -97,11 +112,6 @@ button:hover {
   color: thistle;
 }
 
-
-nav {
-
-}
-
 body {
   background-color: thistle;
   font-family: 'Montserrat', sans-serif;
@@ -113,10 +123,8 @@ h1 {
   font-size: 100px;
 }
 
-.main-title {
-  font-weight: inherit;
-  font-size: 100px;
-}
+
+
 
 
 
