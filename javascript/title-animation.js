@@ -8,6 +8,7 @@ function scrollFunction() {
     document.getElementById("shrink").style.backgroundColor ="thistle";
   } else {
     document.getElementById("shrink").style.fontSize = "100px";
+    document.getElementById("shrink").style.backgroundColor ="transparent";
   }
 }
 
