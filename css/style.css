@@ -9,12 +9,49 @@ header {
   
 
 }
-
-.header-search {
-
+/* Navigation bar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 40%x;
+  background-color: black;
+  color: thistle;
+  border: solid black 1px;
+  border-radius: 8px;
+  text-align: center;
+  display: inline-block;
+  
+}
+/*Link styling*/
+li a {
+  display: block;
+  background-color: black;
+  color: thistle;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 8px;
+  
 }
 
-.header-nav {
+/* Change link colour on hover */
+li a:hover {
+  background-color:thistle;
+  color: black;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  
+}
+
+/*Show active link*/
+.active {
+  background-color: darkmagenta;
+  color: white;
+  border: darkmagenta solid 1px;
+  
+}
+nav {
 
 }
 
@@ -34,6 +71,7 @@ button {
   transition-duration: 0.4s;
 }
 
+/* Change button colour on hover */
 button:hover {
   background-color: black;
   color: thistle;
