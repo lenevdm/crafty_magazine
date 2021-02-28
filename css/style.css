@@ -1,15 +1,17 @@
 
 /* HOME PAGE HEADER: Styling the header bar with button, search, and menu */
-header {
-
+/* Get the menu hamburger image to sit on the right of page and share the same line as button*/
+.header-menu {
+  float: right;
+  margin-right: 15px;
+  display: inline-block;
 }
-
+/*Styling for the Subscribe button on home page*/
 .header-button {
   font-family: inherit ;
-  
-
+  display: inline;
 }
-/* Navigation bar */
+/* Navigation menu */
 ul {
   list-style-type: none;
   margin: 0;
@@ -28,7 +30,7 @@ li a {
   display: block;
   background-color: black;
   color: thistle;
-  padding: 8px 16px;
+  padding: 8px 70px;
   text-decoration: none;
   border-radius: 8px;
   
@@ -46,10 +48,27 @@ li a:hover {
 
 /*Show active link*/
 .active {
-  background-color: darkmagenta;
-  color: white;
-  border: darkmagenta solid 1px;
+  background-color: rgba(100, 0, 139, 0.479);
+  color: thistle;
+    
+}
+
+/*Dropdown navigation bar*/
+.dropdown {
+  display: inline-block;
+  float: right;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 200px;
+  right: 0;
   
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 nav {
 
@@ -61,7 +80,8 @@ button {
   font-family: 'Montserrat' ;
   color: black;
   background-color: thistle;
-  padding: 10px 10px;
+  padding: 10px 10px 10px 10px;
+  margin-left: 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
