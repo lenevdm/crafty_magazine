@@ -106,7 +106,58 @@
     margin-right: auto;
   }
   
+  /* CURRENT ISSUE ARTICLE GRID */
+  /*Create a grid container for the articles (for desktop)*/
+  .article-grid {
+    display: inline-grid;
+    grid-template-columns: 200px 200px 200px 400px;
+    grid-template-rows: 200px 200px 200px 200px;
+    padding: 10px;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    justify-content: space-evenly;
+    align-content: center;
+    
+  }
 
+  .article-grid-item {
+    border: black solid 2px;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .item1 {
+    grid-column: 1 / 1;
+    grid-row: 1;
+  }
+
+  .item2 {
+    grid-column: 2 / 2;
+    grid-row: 1;
+  }
+
+  .item3 {
+    grid-column: 3 / 3;
+    grid-row: 1;
+  }
+
+  .item4 {
+    grid-column: 1 / 1;
+    grid-row: 2;
+  }
+
+  .item5 {
+    grid-column: 2 / 2;
+    grid-row: 2;
+  }
+  .item6 {
+    grid-column: 3 / 3;
+    grid-row: 2;
+  }
+  .item7 {
+    grid-column: 4;
+    grid-row: 1 / span 2
+  }
 /* GENERAL STYLING: Styling for entire website */
 
 button {
