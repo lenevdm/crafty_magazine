@@ -27,10 +27,29 @@
     font-family: 'Montserrat', sans-serif;
   }
   
+  /*Mobile*/
   .mag-title {
     font-family: 'Monoton';
     font-weight: 100;
-    
+    font-size: 2em;
+  }
+
+  /*Tablet*/
+   @media only screen and (min-width: 600px) {
+    .mag-title {
+      font-family: 'Monoton';
+      font-weight: 100;
+      font-size: 4em;
+    }
+   }
+
+  /*Desktop*/
+  @media only screen and (min-width: 768px){
+    .mag-title {
+      font-family: 'Monoton';
+      font-weight: 100;
+      font-size: 4em;
+    }
   }
 
   h1 {
@@ -85,6 +104,7 @@
   .flex-item4 {
     flex:1;
   }
+}
 
    /*Desktop*/
   @media only screen and (min-width: 768px) {
@@ -100,11 +120,20 @@
       align-items: center;
       align-content: center;
   }
+}
 
 /* HEADER AND MENU STYLING*/
-header {
+.header-container {
   display: flex;
   flex-direction: row;
+  align-items: stretch;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+
+.header-item {
+  border: black dashed 1px;
 }
 
 /*----------------------------------------------------------------------------*/
