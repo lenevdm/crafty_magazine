@@ -122,47 +122,58 @@
   /* CURRENT ISSUE COVER IMAGE */
 
   
-  /* CURRENT ISSUE ARTICLE GRID */
+  /* CURRENT ISSUE ARTICLE GRID: Responsive layout using flexbox */
   /*Mobile*/
- 
-  section {
+   .article-grid {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .article-grid-item {
+    border: black dashed 1px;
+    padding: 15px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    flex: 100px;
+    
   }
   
-  
-
-  /*Tablet*/
+   /*Tablet*/
   @media only screen and (min-width: 600px) {
-    section {
+    .article-grid {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      align-items: center;
+      align-items: stretch;
       justify-content: space-around;
     }
 
-    article {
+    .article-grid-item {
       flex: 200px;
+      margin: 15px;
+      
     }
 
   }
 
   /*Desktop*/
   @media only screen and (min-width: 768px) {
-    section {
+    .article-grid {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      align-items: center;
+      align-items: stretch;
       justify-content: space-around;
 
     }
 
-    article {
+    .article-grid-item {
       flex: 200px;
+      margin: 15px;
     }
 
   }
