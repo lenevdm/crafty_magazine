@@ -27,13 +27,89 @@
     font-family: 'Montserrat', sans-serif;
   }
   
-  h1 {
+  .mag-title {
     font-family: 'Monoton';
     font-weight: 100;
-    font-size: 100px;
+    
   }
 
-/*PAGE: INDEX COPY*/
+  h1 {
+    font-family: 'Montserrat';
+  }
+
+  footer {
+    position:static;
+    left:0px;
+    bottom:0px;
+    height:200px;
+    width:100%;
+    background:rgba(255, 127, 80, 0.445);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+   /*Tablet*/
+   @media only screen and (min-width: 600px) {
+    footer {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: nowrap;
+      height:100px;
+      
+    }
+    
+    .footer-item {
+      display: flex;
+      align-items: center;
+      align-content: center;
+
+   }
+
+   .flex-item1 {
+     flex:23;
+   }
+
+   .flex-item2 {
+    flex:1;
+  }
+
+  .flex-item3 {
+    flex:1;
+  }
+
+  .flex-item4 {
+    flex:1;
+  }
+
+   /*Desktop*/
+  @media only screen and (min-width: 768px) {
+    footer {
+      flex-direction: row;
+      align-items: stretch;
+      justify-content: space-around;
+      flex-wrap: nowrap;
+    }
+    
+    .footer-item {
+      display: flex;
+      align-items: center;
+      align-content: center;
+  }
+
+/* HEADER AND MENU STYLING*/
+header {
+  display: flex;
+  flex-direction: row;
+}
+
+/*----------------------------------------------------------------------------*/
+
+  /*PAGE: INDEX COPY*/
   /*CURRENT ISSUE HEADER: Styling the header bar with button, search, and menu */
       /*Sticky header menu*/
       .header {
@@ -155,7 +231,7 @@
     .article-grid-item {
       flex: 200px;
       margin: 15px;
-      
+      width: 30%;
     }
 
   }
