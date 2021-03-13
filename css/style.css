@@ -19,7 +19,7 @@ text-decoration: overline;
 }  
 h2 {
     font-family: 'Montserrat';
-    color: rgba(128, 182, 207, 1); 
+    color: rgba(112, 112, 112, 1); 
     
     }  
 
@@ -47,6 +47,10 @@ button {
 
 
 /* MOBILE, SITE-WIDE STYLING */
+    /*Headings*/
+    h1 {
+        text-align: center;
+    }
     /* Magazine title styling */
         .mag-title {
             font-family: 'Monoton';
@@ -126,6 +130,9 @@ button {
 
 /* TABLET, SITE-WIDE STYLING */
 @media only screen and (min-width: 780px) {
+    h1 {
+        text-align: left;
+    }
     /* Magazine title styling */
         .mag-title {
             font-family: 'Monoton';
@@ -165,7 +172,10 @@ button {
 
 /* DESKTOP, SITE-WIDE STYLING */
 @media only screen and (min-width: 1000px){
-    
+    h1 {
+        text-align: left;
+        padding-left: 10px;
+    }
 
     /* Magazine title styling */
         .mag-title {
@@ -327,7 +337,8 @@ button {
             justify-content: space-around;
         }
         .mag-info-container-item {
-            border: solid black 1px;
+            padding-left: 3px;
+            text-align: center;
         }
 
         /* Contact information */
@@ -341,11 +352,12 @@ button {
         }
 
         .contact-office-container-item {
-            border: solid black 1px;
+            padding-left: 3px;
+            text-align: center;
         }
         /* Office information and map */
         .map-container {
-            flex-grow: 7;
+            text-align: center;
         }
 
     /* TABLET */
@@ -360,10 +372,10 @@ button {
         }
 
         .mag-info-container-item {
-            border: solid black 1px;
             flex: 200px;
             margin: 15px;
             width: 30%;
+            text-align: left;
             }
         /* Contact information */
         .contact-office-container {
@@ -376,12 +388,13 @@ button {
         }
 
         .contact-office-container-item {
-            border: solid black 1px;
             flex: 200px;
             margin: 15px;
             width: 30%;
+            text-align: left;
         }
         /* Office information and map */
+    
     }
     /* DESKTOP */
     @media only screen and (min-width: 1000px) {
@@ -393,12 +406,75 @@ button {
 /* SUBSCRIBE PAGE STYLING */
     /* MOBILE */
         /* Subscription options containers */
+        .subscription-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            
+        }
+
+        .subscription-container-item {
+            flex: 200px;
+            margin: 15px;
+            width: 80%;
+            text-align: center;
+            border: lightcoral dashed 2px;
+            padding: 20px;
+            }
+
+        .subscription-list{
+            color: black;   
+        }
+
+        .subscription-list li{
+            padding-bottom: 15px;
+        }
+
+        .subscription-option-heading{
+            color: white;
+            background-color: rgba(128, 182, 207, 0.568);
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
         
     /* TABLET */
+    @media only screen and (min-width: 780px){
         /* Subscription options containers */
+        .subscription-container{
+            display: flex;
+            flex-direction: row;
+            
+            align-items: stretch;
+            justify-content: space-around;
+        }
+
+        .subscription-container-item {
+            margin: 15px;
+            min-width: 40%;
+            text-align: center;
+            }
+    }
+        
 
     /* DESKTOP */
+    @media only screen and (min-width: 1000px) {
         /* Subscription options containers */
+        .subscription-container{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .subscription-container-item {
+            margin: 15px;
+            min-width: 40%;
+            text-align: center;
+            }
+
+    }
+        
 
 /* CHECKOUT FORM PAGE STYLING */
     /* MOBILE */
@@ -407,11 +483,19 @@ button {
         /* Payment method */
 
     /* TABLET */
+    @media only screen and (min-width: 780px){
         /* Billing details */
         /* Your order summary */
         /* Payment method */
 
+    }
+
+
     /* DESKTOP */
+    @media only screen and (min-width: 1000px) {
         /* Billing details */
         /* Your order summary */
         /* Payment method */
+        
+    }
+        
