@@ -14,10 +14,15 @@ body {
 
 h1 {
 font-family: 'Montserrat';
+color: rgba(128, 182, 207, 1); 
+text-decoration: overline;
 }  
+h2 {
+    font-family: 'Montserrat';
+    color: rgba(128, 182, 207, 1); 
+    
+    }  
 
-
-  
 button {
     font-family: 'Montserrat' ;
     color: white;
@@ -48,6 +53,8 @@ button {
             font-weight: 100;
             font-size: 3em;
             color: rgba(128, 182, 207, 1) ;
+            text-decoration: none;
+            letter-spacing: 3px;
         }
     /* Header styling */
         .header-container {
@@ -97,11 +104,7 @@ button {
         background-color:rgba(255, 59, 63, 1);
         color: white;
         }
-        /*Highlight the active link*/
-        .nav-active {
-            background-color: rgba(128, 182, 207, 1);
-            color: white;   
-        }
+        
     
     /* Footer styling*/
         footer {
@@ -254,7 +257,7 @@ button {
             }
     
     /* TABLET */
-    @media only screen and (min-width: 600px) {
+    @media only screen and (min-width: 780px) {
         /* Front page image styling */
         /* Current issue article grid styling */
             .article-grid {
@@ -273,7 +276,7 @@ button {
     }
 
     /* DESKTOP */
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 1000px) {
         /* Front page image styling */
         /* Current issue article grid styling */
             .article-grid {
@@ -308,20 +311,84 @@ button {
         /* Related stories carousel */
 
 /* ABOUT PAGE STYLING */
+    .info-heading {
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        
+    }    
     /* MOBILE */
         /* Magazine information */
+        .mag-info-container {
+            display: flex;
+            flex-direction: column;
+            align-content: stretch;
+            align-items: stretch;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .mag-info-container-item {
+            border: solid black 1px;
+        }
+
         /* Contact information */
+        .contact-office-container {
+            display: flex;
+            flex-direction: column;
+            align-content: stretch;
+            align-items: stretch;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .contact-office-container-item {
+            border: solid black 1px;
+        }
         /* Office information and map */
+        .map-container {
+            flex-grow: 7;
+        }
 
     /* TABLET */
+    @media only screen and (min-width: 780px) {
         /* Magazine information */
-        /* Contact information */
-        /* Office information and map */
+        .mag-info-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: stretch;
+            justify-content: space-around;
+        }
 
+        .mag-info-container-item {
+            border: solid black 1px;
+            flex: 200px;
+            margin: 15px;
+            width: 30%;
+            }
+        /* Contact information */
+        .contact-office-container {
+            display: flex;
+            flex-direction: row;
+            align-content: stretch;
+            align-items: stretch;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .contact-office-container-item {
+            border: solid black 1px;
+            flex: 200px;
+            margin: 15px;
+            width: 30%;
+        }
+        /* Office information and map */
+    }
     /* DESKTOP */
+    @media only screen and (min-width: 1000px) {
         /* Magazine information */
         /* Contact information */
         /* Office information and map */
+    }
 
 /* SUBSCRIBE PAGE STYLING */
     /* MOBILE */
