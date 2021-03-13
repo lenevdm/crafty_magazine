@@ -1,0 +1,52 @@
+
+/*PAGE: CURRENT ISSUE*/
+  /*CURRENT ISSUE HEADER: Styling the header bar with button, search, and menu */
+      /*Sticky header menu*/
+      .header {
+        padding: 10px 16px;
+        background:thistle;
+      }
+      
+      .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+      
+      .sticky + .content {
+        padding-top: 102px;
+      }
+      
+      
+      
+      
+
+      
+
+      
+
+  /*CURRENT ISSUE TITLE*/
+  #shrink {
+    font-weight: inherit;
+    font-size: 100px;
+    background-color: transparent;
+    color: black;
+    text-align: center;
+    position: static;
+    top: 0;
+    width: 100%; 
+    transition: 0.7s; 
+    display: inline-block;
+  }
+
+  /* CURRENT ISSUE COVER IMAGE */
+  /*Make the image centered and responsive*/
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  

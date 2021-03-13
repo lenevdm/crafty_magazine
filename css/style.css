@@ -1,52 +1,350 @@
+/* ALL WIDTHS, SITE-WIDE STYLING */
+        /* Color Theme Swatches in RGBA */
+        .Swatch-blue { color: rgba(128, 182, 207, 1); }
+        .Swatch-light-blue { color: rgba(202, 235, 242, 1); }
+        .Swatch-dark-grey { color: rgba(112, 112, 112, 1); }
+        .Swatch-red { color: rgba(255, 59, 63, 1); }
+        .Swatch-light-grey { color: rgba(186, 186, 186, 1); }
 
-/*PAGE: CURRENT ISSUE*/
-  /*CURRENT ISSUE HEADER: Styling the header bar with button, search, and menu */
-      /*Sticky header menu*/
-      .header {
-        padding: 10px 16px;
-        background:thistle;
-      }
-      
-      .sticky {
-        position: fixed;
-        top: 0;
-        width: 100%;
-      }
-      
-      .sticky + .content {
-        padding-top: 102px;
-      }
-      
-      
-      
-      
+        /* These styles apply to the entire site, for all screen widths */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(202, 235, 242, 1);
+  }
 
-      
+h1 {
+font-family: 'Montserrat';
+}  
 
-      
 
-  /*CURRENT ISSUE TITLE*/
-  #shrink {
-    font-weight: inherit;
-    font-size: 100px;
-    background-color: transparent;
-    color: black;
+  
+button {
+    font-family: 'Montserrat' ;
+    color: white;
+    background-color: rgba(255, 59, 63, 1);
+    padding: 10px 10px 10px 10px;
+    margin-left: 15px;
     text-align: center;
-    position: static;
-    top: 0;
-    width: 100%; 
-    transition: 0.7s; 
+    text-decoration: none;
     display: inline-block;
+    font-size: 20px;
+    border-radius: 8px;
+    border: 1px solid rgb(202, 235, 242);
+    transition-duration: 0.4s;
+  }
+  
+  /* Change button colour on hover */
+  button:hover {
+    background-color: rgba(128, 182, 207, 1) ; 
+    color: white;
+    border: 1px solid white;
   }
 
-  /* CURRENT ISSUE COVER IMAGE */
-  /*Make the image centered and responsive*/
-  img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  
+
+/* MOBILE, SITE-WIDE STYLING */
+    /* Magazine title styling */
+        .mag-title {
+            font-family: 'Monoton';
+            font-weight: 100;
+            font-size: 3em;
+            color: rgba(128, 182, 207, 1) ;
+        }
+    /* Header styling */
+        .header-container {
+            display: flex;
+            flex-direction: column; 
+        }
+        .header-item {
+            align-self: center;
+            
+        }
+        /*Display the menu/navigation when user hovers over hamburger icon*/
+        .menu-icon {
+            display: block;
+        }
+        .dropdown {
+            display: inline-block;
+            float: right;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        /* Set the navigation menu look */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 100%x;
+            color: white;
+            border-radius: 8px;
+            text-align: center;
+            display: inline-block;
+        }
+        /*Set the style for link in the navigation menu*/
+        li a {
+            display: block;
+            background-color: rgba(186, 186, 186, 1);
+            color: white;
+            padding: 8px 70px;
+            text-decoration: none;
+        }
+        /* Change link colour when user hovers over it */
+        li a:hover {
+        background-color:rgba(255, 59, 63, 1);
+        color: white;
+        }
+        /*Highlight the active link*/
+        .nav-active {
+            background-color: rgba(128, 182, 207, 1);
+            color: white;   
+        }
+    
+    /* Footer styling*/
+        footer {
+            position:static;
+            left:0px;
+            bottom:0px;
+            height:200px;
+            width:100%;
+            background: rgba(186, 186, 186, 1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            color: rgba(112, 112, 112, 1);
+        }
+
+
+/* TABLET, SITE-WIDE STYLING */
+@media only screen and (min-width: 780px) {
+    /* Magazine title styling */
+        .mag-title {
+            font-family: 'Monoton';
+            font-weight: 100;
+            font-size: 4em;
+            }
+        
+    /* Header styling */
+        .header-container {
+            display: flex;
+            flex-direction: row;
+            align-items: stretch;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        .header-item {
+            align-items: center;
+        }
+        
+    /* Footer styling*/
+        footer {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: nowrap;
+            height:100px; 
+        }
+
+        .footer-item {
+            display: flex;
+            align-items: center;
+            align-content: center;
+      
+         }
+
+}    
+
+/* DESKTOP, SITE-WIDE STYLING */
+@media only screen and (min-width: 1000px){
+    
+
+    /* Magazine title styling */
+        .mag-title {
+            font-family: 'Monoton';
+            font-weight: 100;
+            font-size: 4em;
+        }
+    /* Header styling */
+    /* Set the navigation menu look to be inline (not a dropdown menu) */
+    .menu-icon {
+        display: none;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        color: white;
+        
+    }
+
+    li {
+        display: inline;
+        float: right;
+    }
+    /*Set the style for link in the navigation menu*/
+    li a {
+        
+        background-color: rgba(186, 186, 186, 1);
+        color: white;
+        text-decoration: none;
+        margin-left: 0px;
+        margin-right: 2px;
+    }
+    .dropdown {
+        display: inline;
+        
+    }
+    
+    .dropdown-content {
+        display: inline;
+        position: relative;
+        right: 0;
+    }
+    /* Change link colour when user hovers over it */
+    li a:hover {
+    background-color:rgba(255, 59, 63, 1);
+    color: white;
+    }
+
+    /*Highlight the active link*/
+    .nav-active {
+        background-color: rgba(128, 182, 207, 1);
+        color: white;   
+    }
+    /* Footer styling*/
+        footer {
+            flex-direction: row;
+            align-items: stretch;
+            justify-content: space-around;
+            flex-wrap: nowrap;
+        }
+        
+        .footer-item {
+            display: flex;
+            align-items: center;
+            align-content: center;
+        }
+}    
+
+/* LANDING PAGE STYLING */
+    /* MOBILE */
+        /* Front page image styling */
+        /* Current issue article grid styling */
+            .article-grid {
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+            
+            .article-grid-item {
+                border: black dashed 1px;
+                padding: 15px;
+                margin: 5px;
+                display: flex;
+                align-items: center;
+                flex: 100px;
+            }
+    
+    /* TABLET */
+    @media only screen and (min-width: 600px) {
+        /* Front page image styling */
+        /* Current issue article grid styling */
+            .article-grid {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: stretch;
+                justify-content: space-around;
+            }
+        
+            .article-grid-item {
+                flex: 200px;
+                margin: 15px;
+                width: 30%;
+            }
+    }
+
+    /* DESKTOP */
+    @media only screen and (min-width: 768px) {
+        /* Front page image styling */
+        /* Current issue article grid styling */
+            .article-grid {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: stretch;
+                justify-content: space-around;
+            }
+        
+            .article-grid-item {
+                flex: 200px;
+                margin: 15px;
+            }
+    }
+/* ARTICLE PAGE STYLING */
+    /* MOBILE */
+        /* Banner image */
+        /* Article text */
+        /* Image gallery */
+        /* Related stories carousel */
+    /* TABLET */
+        /* Banner image */
+        /* Article text */
+        /* Image gallery */
+        /* Related stories carousel */
+   
+    /* DESKTOP */
+        /* Banner image */
+        /* Article text */
+        /* Image gallery */
+        /* Related stories carousel */
+
+/* ABOUT PAGE STYLING */
+    /* MOBILE */
+        /* Magazine information */
+        /* Contact information */
+        /* Office information and map */
+
+    /* TABLET */
+        /* Magazine information */
+        /* Contact information */
+        /* Office information and map */
+
+    /* DESKTOP */
+        /* Magazine information */
+        /* Contact information */
+        /* Office information and map */
+
+/* SUBSCRIBE PAGE STYLING */
+    /* MOBILE */
+        /* Subscription options containers */
+        
+    /* TABLET */
+        /* Subscription options containers */
+
+    /* DESKTOP */
+        /* Subscription options containers */
+
+/* CHECKOUT FORM PAGE STYLING */
+    /* MOBILE */
+        /* Billing details */
+        /* Your order summary */
+        /* Payment method */
+
+    /* TABLET */
+        /* Billing details */
+        /* Your order summary */
+        /* Payment method */
+
+    /* DESKTOP */
+        /* Billing details */
+        /* Your order summary */
+        /* Payment method */
