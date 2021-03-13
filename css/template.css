@@ -55,11 +55,56 @@ button {
             justify-content: space-around;
             flex-wrap: wrap;
         }
-        
         .header-item {
             border: black dashed 1px;
+            align-content: flex-start;
+        }
+        /* Set the navigation menu look */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 40%x;
+            color: white;
+            border-radius: 8px;
+            text-align: center;
+            display: inline-block;
+        }
+        /*Set the style for link in the navigation menu*/
+        li a {
+            display: block;
+            background-color: rgba(186, 186, 186, 1);
+            color: white;
+            padding: 8px 70px;
+            text-decoration: none;
+        }
+        /* Change link colour when user hovers over it */
+        li a:hover {
+        background-color:rgba(255, 59, 63, 1);
+        color: white;
         }
 
+        /*Highlight the active link*/
+        .nav-active {
+            background-color: rgba(128, 182, 207, 1);
+            color: white;   
+        }
+
+        /*Display the menu/navigation when user hovers over hamburger icon*/
+        .dropdown {
+            display: inline-block;
+            float: right;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            min-width: 200px;
+            right: 0;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
     /* Footer styling*/
         footer {
             position:static;
