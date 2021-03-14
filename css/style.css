@@ -304,30 +304,9 @@ button {
     }
 /* ARTICLE PAGE STYLING */
     /* MOBILE */
-        /* Banner image */     
-        .banner {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://images.unsplash.com/photo-1585112776919-ff0035574c7d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80');
-            height: 400px;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            position: relative;
-        }
-        .banner-text {
-            text-align: center;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
-            padding: 10px;
-        }
-                #banner-heading{
-            color: white;
-        }
-        /* Article text */
+        /* Banner image */  
         
-
+        /* Article text */
         .article-container {
             display: flex;
             flex-direction: column;
@@ -340,60 +319,23 @@ button {
             line-height: 1.8;
             text-align: justify;
         }
-        /* Image gallery */
-        .image-row {
-            display: -ms-flexbox; /* IE10 */
-            display: flex;
-            -ms-flex-wrap: wrap; /* IE10 */
-            flex-wrap: wrap;
-            padding: 0 4px;
-        }
-        .image-column {
-            -ms-flex: 25%; /* IE10 */
-            flex: 25%;
-            max-width: 25%;
-            padding: 0 4px;
-          }
-          
-          .image-column img {
-            margin-top: 8px;
-            vertical-align: middle;
-            width: 100%;
-          }
-
-          @media screen and (max-width: 800px) {
-            .image-column {
-              -ms-flex: 50%;
-              flex: 50%;
-              max-width: 50%;
-            }
-          }
-
-          @media screen and (max-width: 600px) {
-            .image-column {
-              -ms-flex: 100%;
-              flex: 100%;
-              max-width: 100%;
-            }
         /* Related stories carousel */
     /* TABLET */
     @media only screen and (min-width: 780px) {
-        /* Banner image */
-        .banner {
-            height: 600px;
-        }
-
+        /*Banner image*/
         /* Article text */
-        /* Image gallery */
-        
-          }
+        /* Image gallery */ 
         /* Related stories carousel */
     }
+        
+    
     /* DESKTOP */
-        /* Banner image */
+    @media only screen and (min-width: 1000px) {
+        /*Banner image*/
         /* Article text */
-        /* Image gallery */
+        /* Image gallery */ 
         /* Related stories carousel */
+    }
 
 /* ABOUT PAGE STYLING */
     .info-heading {
