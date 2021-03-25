@@ -497,12 +497,61 @@ button {
 /* CHECKOUT FORM PAGE STYLING */
     /* MOBILE */
         /* Billing details */
+        form {
+            
+            
+        }
+        input {
+            width: 75%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border-radius: 4px;
+            border: white;
+          }
+
+          select {
+            width: 75%;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+          }
+          label {
+              color: black;
+              text-align: left;
+          }
+        
+
+          
+
         /* Your order summary */
+        table{
+            width: 75%;
+            border: 2px dashed rgba(255, 59, 63, 1);
+            padding: 15px;
+            overflow-x: auto;
+            margin-bottom: 15px;
+
+        }
+        th {
+            text-align: left;
+            padding-bottom: 10px;
+            
+          }
+        td {
+        padding-bottom: 5px;
+        text-align: left;
+        }
+
+        
         /* Payment method */
 
     /* TABLET */
     @media only screen and (min-width: 780px){
-        /* Billing details */
+        /* Billing details */    
+        form {
+        
+        }
         /* Your order summary */
         /* Payment method */
 

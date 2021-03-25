@@ -32,7 +32,7 @@
     </header>
 
     <!--Billing details form-->
-    <section>
+    <section class="billing-details-container" >
         <h2>Billing details</h2>
         <form>
             <ul>
@@ -327,52 +327,53 @@
     </section>
 
     <!--Order summary information-->
-    <section>
-        <h2>Your order</h2>
-        <table>
-            <tr>
-              <th>Product</th>
-              <th>Total</th>
-            </tr>
-            <tr>
-              <td>Subscription type</td>
-              <td>$xx per year</td>
-            </tr>
-            <tr>
-              <td>Subtotal</td>
-              <td>$ xx / year</td>
-            </tr>
-            <tr>
-                <td>Total</td>
-                <td>$ xx / year</td>
-            </tr>
-        </table>
-    </section>
+        <div class="order-container">
+            <section>
+                <h2>Your order</h2>
+                <table>
+                    <tr>
+                    <th>Product</th>
+                    <th>Total</th>
+                    </tr>
+                    <tr>
+                    <td>Subscription type</td>
+                    <td>$xx per year</td>
+                    </tr>
+                    <tr>
+                    <td>Subtotal</td>
+                    <td>$ xx / year</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>$ xx / year</td>
+                    </tr>
+                </table>
+            </section>
 
-    <!--Payment method form and checkout button-->
-    <section>
-        <form>
-            <fieldset>
-                <legend>Payment method</legend>
-                <ul>
-                  <li>
-                    <input type="radio" id="five" name="payment" value="five" checked>
-                    <label for="five">High five</label>
-                  </li>
-                  <li>
-                    <input type="radio" id="coffee" name="payment" value="coffee">
-                    <label for="coffee">Coffee</label>
-                  </li>
-                  <li>
-                    <input type="radio" id="pizza" name="meal" value="pizza">
-                    <label for="pizza">Pizza</label>
-                  </li>
-                </ul>
-                <button type="submit">Place order</button>
-              </fieldset>
-        </form>
-    </section>
-
+            <!--Payment method form and checkout button-->
+            <section>
+                <form>
+                    <fieldset>
+                        <legend>Payment method</legend>
+                        <ul>
+                        <li>
+                            <input type="radio" id="five" name="payment" value="five" checked>
+                            <label for="five">High five</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="coffee" name="payment" value="coffee">
+                            <label for="coffee">Coffee</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="pizza" name="meal" value="pizza">
+                            <label for="pizza">Pizza</label>
+                        </li>
+                        </ul>
+                        <button type="submit">Place order</button>
+                    </fieldset>
+                </form>
+            </section>
+        </div>
     
 
     <!--Footer with copyright information, subscribe link, and social links-->
