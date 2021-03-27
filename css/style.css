@@ -687,4 +687,9 @@ a:active{
         /* Payment method */
         
     }
-        
+
+    /*Pattern page*/
+        .video-container {
+            display: flex;
+            justify-content: center;
+        }      
