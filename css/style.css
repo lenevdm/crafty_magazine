@@ -369,6 +369,7 @@ button {
 /* ARTICLE PAGE STYLING */
     /* MOBILE */
         /* Banner image */ 
+        /*Takes the main article image and makes it a hero background image with text on top.*/
         .banner-image{
             background-image: linear-gradient(rgba(112, 112, 112, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1585282779872-6ec1b149e551?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
             height: 400px;
@@ -389,6 +390,7 @@ button {
         }
         
         /* Article text */
+        /*Create a thin container of text in the center of the page for easy reading.*/
         .article-container {
             display: flex;
             flex-direction: column;
@@ -400,6 +402,20 @@ button {
             width: 350px;
             line-height: 1.8;
             text-align: justify;
+        }
+
+        /*Image gallery*/
+        .image-gallery-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .image-gallery-item{
+            
+        }
+        .gallery-image{
+            width:100%;
+            height: auto;
         }
         /* Related stories carousel */
     /* TABLET */
