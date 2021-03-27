@@ -51,27 +51,7 @@ button {
     border: 1px solid white;
   }
 
-  /*Set the styling for all links in the website*/
-  a:link {
-      color: white;
-      text-decoration: none;
-  }
-
-  a:visited{
-    color: white;
-    text-decoration: none;
-
-  }
-
-  a:hover{
-    color:rgba(255, 59, 63, 1);
-    text-decoration: underline;
-  }
-
-  a:active{
-    color:rgba(255, 59, 63, 1);
-    text-decoration: underline;
-  }
+  
 
 /* MOBILE, SITE-WIDE STYLING */
     /*Headings*/
@@ -103,10 +83,12 @@ button {
         .dropdown {
             display: inline-block;
             float: right;
+            
         }
         .dropdown-content {
             display: none;
             position: absolute;
+            
         }
         .dropdown:hover .dropdown-content {
             display: block;
@@ -123,6 +105,7 @@ button {
             display: inline-block;
         }
         /*Set the style for link in the navigation menu*/
+        /*Give the links a block display with gray background and no bullets*/
         .nav-link {
             display: block;
             background-color: rgba(186, 186, 186, 1);
@@ -130,7 +113,7 @@ button {
             padding: 8px 70px;
             text-decoration: none;
         }
-        /* Change link colour when user hovers over it */
+        /* Change link colour when user hovers over it to the red accent colour.*/
         .nav-link:hover {
         background-color:rgba(255, 59, 63, 1);
         color: white;
@@ -138,6 +121,7 @@ button {
         
     
     /* Footer styling*/
+    /*Keep the footer at the bottom of the page with a 100% width and a constant height.*/
         footer {
             position:static;
             left:0px;
@@ -150,7 +134,7 @@ button {
             align-items: center;
             align-content: center;
             flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content: space-evenly;
             color: white;
         }
 
@@ -231,7 +215,7 @@ button {
     }
 
     .nav-link {
-        display: inline;
+        display: block;
         float: right;
     }
     /*Set the style for link in the navigation menu*/
@@ -239,11 +223,11 @@ button {
         
         color: white;
         text-decoration: none;
-        margin-left: 0px;
+        margin-left: 2px;
         margin-right: 2px;
     }
     .dropdown {
-        display: inline;
+        display: block;
         
     }
     
@@ -441,6 +425,14 @@ button {
         letter-spacing: 3px;
         
     }    
+
+    #about-p {
+        text-align: center;
+        font-size: 1.5em;
+    }
+    #sub-about-p{
+        text-align: center;
+    }
     /* MOBILE */
         /* Magazine information */
         .mag-info-container {
@@ -506,6 +498,13 @@ button {
             flex: 200px;
             margin: 15px;
             width: 30%;
+            text-align: left;
+        }
+
+        #about-p {
+            text-align: left;
+        }
+        #sub-about-p{
             text-align: left;
         }
         /* Office information and map */
