@@ -3,7 +3,7 @@
         .Swatch-blue { color: rgba(128, 182, 207, 1); }
         .Swatch-light-blue { color: rgba(202, 235, 242, 1); }
         .Swatch-dark-grey { color: rgba(112, 112, 112, 1); }
-        .Swatch-red { color: rgba(255, 59, 63, 1); }
+        .Swatch-red { color: rgb(255, 59, 63); }
         .Swatch-light-grey { color: rgba(186, 186, 186, 1); }
 
 /* These styles apply to the entire site, for all screen widths */
@@ -692,4 +692,11 @@ a:active{
         .video-container {
             display: flex;
             justify-content: center;
-        }      
+        }    
+        
+    /*Under construction page*/    
+        .construction-container{
+            display: flex;
+            justify-content: center;
+            width: 50%;
+        }
