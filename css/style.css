@@ -698,5 +698,5 @@ a:active{
         .construction-container{
             display: flex;
             justify-content: center;
-            width: 50%;
+            flex-wrap: nowrap;
         }
