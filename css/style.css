@@ -19,9 +19,15 @@ text-decoration: overline;
 }  
 h2 {
     font-family: 'Montserrat';
-    color: rgba(112, 112, 112, 1); 
+    color: rgba(128, 182, 207, 1); 
+    text-decoration: underline;
+    }
     
-    }  
+h3{
+    color: white;
+    background-color: rgba(128, 182, 207, 1);
+    padding: 5px;
+}
 
 button {
     font-family: 'Montserrat' ;
@@ -117,15 +123,22 @@ button {
             bottom:0px;
             height:200px;
             width:100%;
-            background: rgba(186, 186, 186, 1);
+            background: rgba(128, 182, 207, 1);
             display: flex;
             flex-direction: column;
             align-items: center;
             align-content: center;
             flex-wrap: wrap;
             justify-content: space-around;
-            color: rgba(112, 112, 112, 1);
+            color: white;
         }
+
+        .footer-icon{
+            width: 30px;
+            height: auto;
+        }
+
+        
 
 
 /* TABLET, SITE-WIDE STYLING */
@@ -258,12 +271,38 @@ button {
             }
             
             .article-grid-item {
-                border: black dashed 1px;
+                border: rgba(255, 59, 63, 1) dashed 2px;
                 padding: 15px;
                 margin: 5px;
                 display: flex;
                 align-items: center;
                 flex: 100px;
+            }
+            .cover-image{
+                /*Make the image grow as the screen grows, but does not exceed picture size.*/
+                max-width: 100%;
+                height: auto;
+                /*Make the picture centered in the window*/
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .cover-image-text{
+                position: absolute;
+                top: 80%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: rgba(128, 182, 207, 0.5);
+                padding: 20px;
+                text-align: center;
+                color:white;
+            }
+
+            .grid-image{
+                width: 50%;
+                height: auto;
+                margin-right: 10px;
             }
     
     /* TABLET */
@@ -283,6 +322,7 @@ button {
                 margin: 15px;
                 width: 30%;
             }
+            
     }
 
     /* DESKTOP */
