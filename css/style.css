@@ -51,6 +51,27 @@ button {
     border: 1px solid white;
   }
 
+  /*Set the styling for all links in the website*/
+  a:link {
+      color: white;
+      text-decoration: none;
+  }
+
+  a:visited{
+    color: white;
+    text-decoration: none;
+
+  }
+
+  a:hover{
+    color:rgba(255, 59, 63, 1);
+    text-decoration: underline;
+  }
+
+  a:active{
+    color:rgba(255, 59, 63, 1);
+    text-decoration: underline;
+  }
 
 /* MOBILE, SITE-WIDE STYLING */
     /*Headings*/
@@ -91,7 +112,7 @@ button {
             display: block;
         }
         /* Set the navigation menu look */
-        ul {
+        .nav-list {
             list-style-type: none;
             margin: 0;
             padding: 0;
@@ -102,7 +123,7 @@ button {
             display: inline-block;
         }
         /*Set the style for link in the navigation menu*/
-        li a {
+        .nav-link {
             display: block;
             background-color: rgba(186, 186, 186, 1);
             color: white;
@@ -110,7 +131,7 @@ button {
             text-decoration: none;
         }
         /* Change link colour when user hovers over it */
-        li a:hover {
+        .nav-link:hover {
         background-color:rgba(255, 59, 63, 1);
         color: white;
         }
@@ -201,7 +222,7 @@ button {
     .menu-icon {
         display: none;
     }
-    ul {
+    .nav-list {
         list-style-type: none;
         margin: 0;
         padding: 0;
@@ -209,14 +230,13 @@ button {
         
     }
 
-    li {
+    .nav-link {
         display: inline;
         float: right;
     }
     /*Set the style for link in the navigation menu*/
-    li a {
+    .nav-link {
         
-        background-color: rgba(186, 186, 186, 1);
         color: white;
         text-decoration: none;
         margin-left: 0px;
@@ -233,7 +253,7 @@ button {
         right: 0;
     }
     /* Change link colour when user hovers over it */
-    li a:hover {
+    .nav-link :hover {
     background-color:rgba(255, 59, 63, 1);
     color: white;
     }
@@ -304,6 +324,10 @@ button {
                 height: auto;
                 margin-right: 10px;
             }
+
+            a {
+                padding: 0px;
+            }
     
     /* TABLET */
     @media only screen and (min-width: 780px) {
@@ -344,7 +368,25 @@ button {
     }
 /* ARTICLE PAGE STYLING */
     /* MOBILE */
-        /* Banner image */  
+        /* Banner image */ 
+        .banner-image{
+            background-image: linear-gradient(rgba(112, 112, 112, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1585282779872-6ec1b149e551?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
+            height: 400px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        } 
+
+        #banner-text{
+            text-align: center;                       
+            position: absolute;
+            top: 40%;
+            color: white;
+        }
+        #banner-heading{
+            color: white;
+        }
         
         /* Article text */
         .article-container {
