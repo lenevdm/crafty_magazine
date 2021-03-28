@@ -72,6 +72,13 @@ a:active{
   color:rgba(255, 59, 63, 1);
   text-decoration: underline;
 }
+/*This class is added to the header to make it sticky when the user scrolls*/
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(202, 235, 242, 1);
+  }
 
 /* MOBILE, SITE-WIDE STYLING */
     /*Headings*/
